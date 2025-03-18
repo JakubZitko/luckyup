@@ -2508,6 +2508,297 @@
 .bottom-nav-item.active .bottom-nav-icon i {
     text-shadow: 0 0 10px rgba(212, 193, 176, 0.3);
 }
+
+/* Modern Dermatology Section Styles */
+.dermatology {
+    position: relative;
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+.dermatology-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Enhanced Hero Banner */
+.dermatology-hero {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+.dermatology-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.postimg.cc/vBLYYf6q/image.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.7s ease;
+}
+
+.dermatology-hero:hover .dermatology-bg {
+    transform: scale(1.05);
+}
+
+.dermatology-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.4));
+}
+
+.dermatology-title-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.dermatology-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.dermatology-main-title:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary);
+    transform: translateX(-50%);
+}
+
+.dermatology-subtitle {
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+/* Content Layout Improvements */
+.dermatology-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    margin-top: 60px;
+    width: 100%;
+}
+
+/* Doctor Profile Enhancements */
+.doctor-profile {
+    position: relative;
+}
+
+.doctor-image {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.doctor-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.doctor-profile:hover .doctor-image img {
+    transform: scale(1.02);
+}
+
+.doctor-image-accent {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 60%;
+    height: 60%;
+    background-color: var(--accent);
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.doctor-info {
+    padding: 40px;
+    background-color: var(--light-bg);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.doctor-profile:hover .doctor-info {
+    transform: translateY(-10px);
+}
+
+.doctor-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.doctor-title {
+    font-size: 16px;
+    color: var(--primary-dark);
+    font-weight: 500;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.doctor-bio {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+/* Dermatology Text Improvements */
+.dermatology-info {
+    padding-right: 50px;
+}
+
+.dermatology-text {
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--text-light);
+    margin-bottom: 35px;
+}
+
+/* Modern Service Items */
+.dermatology-services {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    flex-shrink: 0;
+    color: var(--primary-dark);
+    box-shadow: 0 10px 20px rgba(212, 193, 176, 0.2);
+    transition: all 0.3s ease;
+}
+
+.service-item:hover .service-icon {
+    background-color: var(--primary);
+    color: var(--secondary);
+    transform: scale(1.05);
+}
+
+.service-details h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+
+.service-details p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+/* Responsive Fixes */
+@media (max-width: 1200px) {
+    .dermatology-services {
+        grid-template-columns: 1fr;
+    }
+    
+    .dermatology-main-title {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .dermatology-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .dermatology-info {
+        padding-right: 0;
+    }
+    
+    .dermatology-hero {
+        height: 350px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dermatology-hero {
+        height: 280px;
+        margin-bottom: 50px;
+    }
+    
+    .dermatology-main-title {
+        font-size: 42px;
+    }
+    
+    .service-item {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .service-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .doctor-info {
+        padding: 30px;
+    }
+}
 </style>
 
 <!-- Add this HTML code before the end of your body tag -->
@@ -2751,81 +3042,111 @@
             </div>
         </section>
         
-        <!-- Dermatology Section -->
-        <section id="dermatology" class="dermatology section-padding">
-            <div class="container">
-                <div class="dermatology-inner">
-                    <div class="dermatology-hero">
-                        <div class="dermatology-bg"></div>
-                        <div class="dermatology-title-container">
-                            <h2 class="dermatology-main-title">Dermatologie</h2>
-                            <div class="dermatology-subtitle">Prague Aesthetic Clinic</div>
-                        </div>
+        <!-- Dermatology Section with Modern Design -->
+<section id="dermatology" class="dermatology section-padding">
+    <div class="container">
+        <div class="dermatology-inner">
+            <!-- Hero Banner with Overlay -->
+            <div class="dermatology-hero">
+                <div class="dermatology-bg"></div>
+                <div class="dermatology-overlay"></div>
+                <div class="dermatology-title-container">
+                    <h2 class="dermatology-main-title">Dermatologie</h2>
+                    <div class="dermatology-subtitle">Prague Aesthetic Clinic</div>
+                </div>
+            </div>
+            
+            <div class="dermatology-content">
+                <!-- Doctor Profile -->
+                <div class="doctor-profile zoom-in">
+                    <div class="doctor-image">
+                        <img src="https://i.postimg.cc/hPb5d7zR/image.png" alt="MUDr. Ali Amiri">
+                        <div class="doctor-image-accent"></div>
                     </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">MUDr. Ali Amiri</h3>
+                        <div class="doctor-title">Specialista v oboru DERMATOLOGIE</div>
+                        <p class="doctor-bio">MUDr. Ali Amiri je zkušený dermatolog s více než 15letou praxí v oboru. Specializuje se na léčbu kožních onemocnění a estetickou dermatologii. Je držitelem řady prestižních certifikátů a pravidelně se účastní mezinárodních konferencí a školení.</p>
+                    </div>
+                </div>
+                
+                <!-- Dermatology Info -->
+                <div class="dermatology-info fade-in-right">
+                    <p class="dermatology-text reveal-text">Na základě nejnovějších poznatků z oboru dermatologie naše klinika nabízí pacientům trpícím kožními problémy nejlepší možnosti léčby a ošetření. Odborným vyšetřením naši lékaři nejdříve zjistí příčinu onemocnění, které může být různého původu a doporučí Vám nejlepší postup léčby.</p>
                     
-                    <div class="dermatology-content">
-                        <div class="doctor-profile zoom-in">
-                            <div class="doctor-image">
-                                <img src="https://i.postimg.cc/hPb5d7zR/image.png" alt="MUDr. Ali Amiri">
+                    <p class="dermatology-text reveal-text">Naše klinika poskytuje komplexní dermatologickou péči zaměřenou na diagnostiku a léčbu celého spektra kožních onemocnění a problémů včetně:</p>
+                    
+                    <div class="dermatology-services stagger-group">
+                        <!-- Service 1 -->
+                        <div class="service-item stagger-item">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                                </svg>
                             </div>
-                            <div class="doctor-info">
-                                <h3 class="doctor-name">MUDr. Ali Amiri</h3>
-                                <div class="doctor-title">Specialista v oboru DERMATOLOGIE</div>
-                                <p class="doctor-bio">MUDr. Ali Amiri je zkušený dermatolog s více než 15letou praxí v oboru. Specializuje se na léčbu kožních onemocnění a estetickou dermatologii. Je držitelem řady prestižních certifikátů a pravidelně se účastní mezinárodních konferencí a školení.</p>
+                            <div class="service-details">
+                                <h3>Akné a problematická pleť</h3>
+                                <p>Komplexní léčba všech forem akné s využitím nejmodernějších léčebných postupů a technologií.</p>
                             </div>
                         </div>
                         
-                        <div class="dermatology-info fade-in-right">
-                            <p class="dermatology-text reveal-text">Na základě nejnovějších poznatků z oboru dermatologie naše klinika nabízí pacientům trpícím kožními problémy nejlepší možnosti léčby a ošetření. Odborným vyšetřením naši lékaři nejdříve zjistí příčinu onemocnění, které může být různého původu a doporučí Vám nejlepší postup léčby.</p>
-                            
-                            <p class="dermatology-text reveal-text">Naše klinika poskytuje komplexní dermatologickou péči zaměřenou na diagnostiku a léčbu celého spektra kožních onemocnění a problémů včetně:</p>
-                            
-                            <div class="dermatology-services stagger-group">
-                                <div class="service-item stagger-item">
-                                    <div class="service-icon">
-                                        <img src="/api/placeholder/100/100" alt="Akné a problematická pleť">
-                                    </div>
-                                    <div class="service-details">
-                                        <h3>Akné a problematická pleť</h3>
-                                        <p>Komplexní léčba všech forem akné s využitím nejmodernějších léčebných postupů a technologií.</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="service-item stagger-item">
-                                    <div class="service-icon">
-                                        <img src="/api/placeholder/100/100" alt="Ekzémy a dermatitidy">
-                                    </div>
-                                    <div class="service-details">
-                                        <h3>Ekzémy a dermatitidy</h3>
-                                        <p>Diagnostika a léčba atopického ekzému, kontaktní dermatitidy a dalších zánětlivých onemocnění kůže.</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="service-item stagger-item">
-                                    <div class="service-icon">
-                                        <img src="/api/placeholder/100/100" alt="Vyšetření pigmentových znamének">
-                                    </div>
-                                    <div class="service-details">
-                                        <h3>Vyšetření pigmentových znamének</h3>
-                                        <p>Dermatoskopické vyšetření a prevence melanomů a dalších kožních nádorů.</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="service-item stagger-item">
-                                    <div class="service-icon">
-                                        <img src="/api/placeholder/100/100" alt="Léčba padání vlasů">
-                                    </div>
-                                    <div class="service-details">
-                                        <h3>Léčba padání vlasů</h3>
-                                        <p>Diagnostika příčin a účinná terapie alopecie a dalších problémů s vlasy a vlasovou pokožkou.</p>
-                                    </div>
-                                </div>
+                        <!-- Service 2 -->
+                        <div class="service-item stagger-item">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                                    <line x1="16" y1="8" x2="2" y2="22"></line>
+                                    <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                                </svg>
+                            </div>
+                            <div class="service-details">
+                                <h3>Ekzémy a dermatitidy</h3>
+                                <p>Diagnostika a léčba atopického ekzému, kontaktní dermatitidy a dalších zánětlivých onemocnění kůže.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 3 -->
+                        <div class="service-item stagger-item">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="22" y1="12" x2="18" y2="12"></line>
+                                    <line x1="6" y1="12" x2="2" y2="12"></line>
+                                    <line x1="12" y1="6" x2="12" y2="2"></line>
+                                    <line x1="12" y1="22" x2="12" y2="18"></line>
+                                </svg>
+                            </div>
+                            <div class="service-details">
+                                <h3>Vyšetření pigmentových znamének</h3>
+                                <p>Dermatoskopické vyšetření a prevence melanomů a dalších kožních nádorů.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 4 -->
+                        <div class="service-item stagger-item">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="5" r="3"></circle>
+                                    <line x1="12" y1="22" x2="12" y2="8"></line>
+                                    <path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>
+                                </svg>
+                            </div>
+                            <div class="service-details">
+                                <h3>Léčba padání vlasů</h3>
+                                <p>Diagnostika příčin a účinná terapie alopecie a dalších problémů s vlasy a vlasovou pokožkou.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
         
         <!-- CTA Section -->
         <section class="cta">
